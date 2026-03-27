@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: agent
+Version: 1.5.2
+Summary: APSIM next generation package AI interface
+Author-email: Richard Magala <magalarich20@gmail.com>
+Project-URL: Homepage, https://github.com/MAGALA-RICHARD
+Keywords: python,APSIM Next Generation,pythonnet,crop modeling
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.14,>=3.10
+Description-Content-Type: text/x-rst
+Requires-Dist: apsimngpy>=1.5.2
+Requires-Dist: loguru

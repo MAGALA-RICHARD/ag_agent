@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent"
+version = '1.5.2'
+description = "APSIM next generation package AI interface"
+readme = "README.rst"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Richard Magala", email = "magalarich20@gmail.com" }
+]
+keywords = ["python", "APSIM Next Generation", "pythonnet", "crop modeling"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10,<3.14"
+
+dependencies = [
+  'loguru'
+]
+
+[project.urls]
+Homepage = "https://github.com/MAGALA-RICHARD"
+
+[tool.setuptools]
+packages = ["apsimNGpy"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"agent" = [
+    "data/*.apsimx",
+    "*.met",
+    './apsimNGpy/*.dll',
+    './apsimNGpy/dll/*.dll',
+    "experiment/*.py",
+    "examples/*.png",
+    "images/*.png",
+    "*.ini"
+]
+
+[project.scripts]
+apsim = "apsimNGpy.cli.cli:main_entry_point"
+bp = "apsimNGpy.cli.set_ups:apsim_bin_path"
+apsim_bin_path = "apsimNGpy.cli.set_ups:apsim_bin_path"

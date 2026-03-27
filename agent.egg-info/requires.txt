@@ -1,0 +1,2 @@
+apsimngpy>=1.5.2
+loguru
